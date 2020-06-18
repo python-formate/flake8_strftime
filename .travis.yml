@@ -40,7 +40,7 @@ jobs:
         provider: pypi
         user: "DomDF"
         password:
-          secure:
+          secure: EAbTEh6Bnb50yoQybiwf7WgQkRyyepwLT2r9ZqI4JDeowxXmHAcJhbjSCsJsgT8tGAhutmekcGH1+zQR4FPggFoBCiLjGT9zBbwvAzDe4yFQ+hcvMpDY6CmH5YUes2ih1xB51kt7FVcmAHmm9re2snIASLwKTYHuuWbRL85QCe/t1eSZ6bWv1xBVEL9QuraAU9V2zyfsjvi+EXsusXIAXZB8SDgzJkgUhm8zNoj5Nr1Uhy7DkW2ty0LVKy+WzE7PTT8A5Uwl247vPSxqo+U+BBlXfU4dkEzxlYka7oSXnkT6knBQkY09jKVg511jZUyLsA2lu+xgbJXqFsSgTe6UK74aSa9q8aWxUkxFdiKZUQldvwWfVJvNEJTVCw9/eFv4/U0FSN+zZYzZmd3hOEN/rxwV/UdChuRWnXrOdO2QJZSAi1S8lg1a8SdPa3vRAC/hr2qalIm77H+5AkdZsxGh1tUV+hTy8lfWeySftyzl+5KTnwjvnBHvKbQxA7OZ7A2FBoC9ynKVRIN6x2/rU3bqZNXfEV8Vq2MI6yPGrAWxquljltHKzChaLtxaVMmM9RKQUyD3XUNpSWABed3/IVjcDoE4xIf3kSzYisiKaNNEBBGHIqICX0z4sZQ5Fsxf+RPcRvYMhxYiT8V3pPUi9i4uF2E+sscALBaGGdgPiGsrPN0=
         distributions: "sdist bdist_wheel"
         skip_existing: true
     - stage: deploy_conda
