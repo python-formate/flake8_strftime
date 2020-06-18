@@ -15,7 +15,7 @@ setup(
 		author_email=author_email,
 		classifiers=classifiers,
 		description=short_desc,
-		entry_points=entry_points,
+		# entry_points=entry_points,
 		extras_require=extras_require,
 		include_package_data=True,
 		install_requires=install_requires,
