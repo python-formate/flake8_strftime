@@ -93,6 +93,7 @@ classifiers = [
 		'Programming Language :: Python :: Implementation :: PyPy',
 		'Programming Language :: Python',
 		'Programming Language :: Python :: 3 :: Only',
+		'Typing :: Typed',
 		'Operating System :: OS Independent',
 
 		]
