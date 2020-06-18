@@ -148,6 +148,7 @@ Installation
 	:maxdepth: 3
 	:caption: Documentation
 
+	codes
 	API Reference<docs>
 	Source
 	Building
