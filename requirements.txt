@@ -1,0 +1,2 @@
+flake8>=3.7
+importlib-metadata>=0.9;python_version<"3.8"

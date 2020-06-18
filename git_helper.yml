@@ -6,7 +6,7 @@ email: "dominic@davis-foster.co.uk"
 version: "0.0.0"
 username: "domdfcoding"
 license: 'MIT'
-short_desc: "Check for use of platform specific strftime codes using Flake8."
+short_desc: "A flake8 plugin which checks for use of platform specific strftime codes using ."
 
 conda_channels:
   - domdfcoding
