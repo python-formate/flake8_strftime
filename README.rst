@@ -8,6 +8,7 @@ flake8_strftime
 
 .. end short_desc
 
+
 .. start shields 
 
 .. list-table::
@@ -103,59 +104,34 @@ flake8_strftime
 
 .. end shields
 
+|
+
 Installation
----------------
+--------------
 
 .. start installation
 
-.. tabs::
+``flake8_strftime`` can be installed from PyPI or Anaconda.
 
-	.. tab:: from PyPI
+To install with ``pip``:
 
-		.. prompt:: bash
+.. code-block:: bash
 
-			pip install flake8_strftime
+	$ python -m pip install flake8_strftime
 
-	.. tab:: from Anaconda
+To install with ``conda``:
 
-		First add the required channels
+	* First add the required channels
 
-		.. prompt:: bash
+	.. code-block:: bash
 
-			conda config --add channels http://conda.anaconda.org/domdfcoding
-			conda config --add channels http://conda.anaconda.org/conda-forge
+		$ conda config --add channels http://conda.anaconda.org/domdfcoding
+		$ conda config --add channels http://conda.anaconda.org/conda-forge
 
-		Then install
+	* Then install
 
-		.. prompt:: bash
+	.. code-block:: bash
 
-			conda install flake8_strftime
-
-	.. tab:: from GitHub
-
-		.. prompt:: bash
-
-			pip install git+https://github.com/domdfcoding/flake8_strftime@master
+		$ conda install flake8_strftime
 
 .. end installation
-
-.. toctree::
-	:hidden:
-
-	Home<self>
-
-.. toctree::
-	:maxdepth: 3
-	:caption: Documentation
-
-	API Reference<docs>
-	Source
-	Building
-
-.. start links
-
-View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
-
-`Browse the GitHub Repository <https://github.com/domdfcoding/flake8_strftime>`__
-
-.. end links
