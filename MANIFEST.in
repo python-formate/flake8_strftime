@@ -1,0 +1,6 @@
+include __pkginfo__.py
+include LICENSE
+include requirements.txt
+recursive-exclude **/__pycache__ *
+recursive-include flake8_strftime/ *.pyi
+recursive-include flake8_strftime/ py.typed
