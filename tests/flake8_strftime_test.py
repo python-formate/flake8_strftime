@@ -2,13 +2,8 @@
 import ast
 
 # this package
-import datetime
-import sys
-
 from flake8_strftime import Plugin
 
-python_version = sys.version[:3]
-f"{datetime.datetime.now():%Y/%-m/%-d %H:%M}"
 
 def results(s):
 	return {'{}:{}: {}'.format(*r) for r in Plugin(ast.parse(s)).run()}
