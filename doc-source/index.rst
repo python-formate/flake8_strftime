@@ -90,7 +90,7 @@ flake8_strftime
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/flake8_strftime
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/flake8_strftime/v0.0.0
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/flake8_strftime/v0.1.0
 	:target: https://github.com/domdfcoding/flake8_strftime/pulse
 	:alt: GitHub commits since tagged version
 
