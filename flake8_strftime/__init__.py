@@ -29,20 +29,20 @@ A flake8 plugin which checks for use of platform specific strftime codes using .
 #  THE SOFTWARE.
 #
 
-__author__ = "Dominic Davis-Foster"
-__copyright__ = "2020 Dominic Davis-Foster"
-
-__license__ = "MIT"
-__version__ = "0.1.1"
-__email__ = "dominic@davis-foster.co.uk"
 # stdlib
 import ast
 import re
 import sys
 from typing import Any, Dict, Generator, List, Tuple, Type, Union
 
-STRFTIME001 = 'STRFTIME001 Linux-specific strftime code used.'  # noqa: E501
-STRFTIME002 = 'STRFTIME002 Windows-specific strftime code used.'  # noqa: E501
+__author__ = "Dominic Davis-Foster"
+__copyright__ = "2020 Dominic Davis-Foster"
+__license__ = "MIT"
+__version__ = "0.1.1"
+__email__ = "dominic@davis-foster.co.uk"
+
+STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."  # noqa: E501
+STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."  # noqa: E501
 
 
 class Visitor(ast.NodeVisitor):
@@ -54,16 +54,31 @@ class Visitor(ast.NodeVisitor):
 	if sys.version_info < (3, 8):  # pragma: no cover (<PY38)
 
 		def visit_Str(self, node: ast.Str):
+			"""
+
+			:param node: The node being visited
+			"""
+
 			self._check_linux(node)
 			self._check_windows(node)
 
 	else:  # pragma: no cover (PY38+)
 
 		def visit_Constant(self, node: ast.Constant):
+			"""
+
+			:param node: The node being visited
+			"""
+
 			self._check_linux(node)
 			self._check_windows(node)
 
 	def _check_linux(self, node: Union[ast.Str, ast.Constant]):
+		"""
+
+		:param node: The node being visited
+		"""
+
 		for match in re.finditer(r"%-[dmHIMSj]", node.s):
 			self.errors.append((
 					node.lineno,
@@ -72,6 +87,11 @@ class Visitor(ast.NodeVisitor):
 					))
 
 	def _check_windows(self, node: Union[ast.Str, ast.Constant]):
+		"""
+
+		:param node: The node being visited
+		"""
+
 		for match in re.finditer(r"%#[dmHIMSj]", node.s):
 			self.errors.append((
 					node.lineno,
