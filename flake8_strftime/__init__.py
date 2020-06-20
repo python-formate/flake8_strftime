@@ -2,7 +2,7 @@
 #
 #  __init__.py
 """
-A flake8 plugin which checks for use of platform specific strftime codes using .
+A flake8 plugin which checks for use of platform specific strftime codes.
 """
 #
 #  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
