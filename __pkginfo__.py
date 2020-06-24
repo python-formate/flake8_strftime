@@ -53,7 +53,7 @@ entry_points = {
 		"console_scripts": []
 		}
 
-__license__ = "MIT"
+__license__ = "MIT License"
 
 short_desc = "A flake8 plugin which checks for use of platform specific strftime codes."
 
@@ -83,18 +83,19 @@ extras_require = {'all': []}
 classifiers = [
 		'Development Status :: 4 - Beta',
 		'Intended Audience :: Developers',
-		'Topic :: Software Development :: Libraries :: Python Modules',
-		'Topic :: Utilities',
+		'License :: OSI Approved :: MIT License',
+		'Operating System :: OS Independent',
+		'Programming Language :: Python',
+		'Programming Language :: Python :: 3 :: Only',
 		'Programming Language :: Python :: 3.6',
-		'Programming Language :: Python :: Implementation :: CPython',
 		'Programming Language :: Python :: 3.7',
 		'Programming Language :: Python :: 3.8',
 		'Programming Language :: Python :: 3.9',
+		'Programming Language :: Python :: Implementation :: CPython',
 		'Programming Language :: Python :: Implementation :: PyPy',
-		'Programming Language :: Python',
-		'Programming Language :: Python :: 3 :: Only',
+		'Topic :: Software Development :: Libraries :: Python Modules',
+		'Topic :: Utilities',
 		'Typing :: Typed',
-		'Operating System :: OS Independent',
 
 		]
 
