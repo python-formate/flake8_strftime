@@ -8,7 +8,7 @@ flake8_strftime
 
 .. end short_desc
 
-.. start shields 
+.. start shields
 
 .. list-table::
 	:stub-columns: 1
@@ -30,7 +30,7 @@ flake8_strftime
 .. |docs| image:: https://img.shields.io/readthedocs/flake8_strftime/latest?logo=read-the-docs
 	:target: https://flake8_strftime.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
-	
+
 .. |docs_check| image:: https://github.com/domdfcoding/flake8_strftime/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
@@ -63,7 +63,7 @@ flake8_strftime
 	:target: https://pypi.org/project/flake8_strftime/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/flake8_strftime
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/flake8_strftime?logo=python&logoColor=white
 	:target: https://pypi.org/project/flake8_strftime/
 	:alt: PyPI - Supported Python Versions
 
@@ -76,16 +76,16 @@ flake8_strftime
 	:alt: PyPI - Wheel
 
 .. |conda-version| image:: https://img.shields.io/conda/v/domdfcoding/flake8_strftime?logo=anaconda
-	:alt: Conda - Package Version
 	:target: https://anaconda.org/domdfcoding/flake8_strftime
+	:alt: Conda - Package Version
 
 .. |conda-platform| image:: https://img.shields.io/conda/pn/domdfcoding/flake8_strftime?label=conda%7Cplatform
-	:alt: Conda - Platform
 	:target: https://anaconda.org/domdfcoding/flake8_strftime
+	:alt: Conda - Platform
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/flake8_strftime
-	:alt: License
 	:target: https://github.com/domdfcoding/flake8_strftime/blob/master/LICENSE
+	:alt: License
 
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/flake8_strftime
 	:alt: GitHub top language
@@ -114,7 +114,7 @@ Installation
 
 		.. prompt:: bash
 
-			pip install flake8_strftime
+			python3 -m pip install flake8_strftime --user
 
 	.. tab:: from Anaconda
 
@@ -135,7 +135,7 @@ Installation
 
 		.. prompt:: bash
 
-			pip install git+https://github.com/domdfcoding/flake8_strftime@master
+			python3 -m pip install git+https://github.com/domdfcoding/flake8_strftime@master --user
 
 .. end installation
 
