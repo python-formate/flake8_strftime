@@ -50,7 +50,7 @@ pypi_name = "flake8_strftime"
 import_name = "flake8_strftime"
 py_modules = []
 entry_points = {
-		"console_scripts": []
+		"console_scripts": [],
 		}
 
 __license__ = "MIT License"
