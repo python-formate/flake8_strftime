@@ -10,4 +10,3 @@ API Reference
 	:special-members:
 	:inherited-members:
 	:undoc-members:
-
