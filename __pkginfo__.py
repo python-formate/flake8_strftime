@@ -19,8 +19,6 @@ __all__ = [
 		"__version__",
 		"modname",
 		"pypi_name",
-		"py_modules",
-		"entry_points",
 		"__license__",
 		"__author__",
 		"short_desc",
@@ -29,13 +27,11 @@ __all__ = [
 		"github_username",
 		"web",
 		"github_url",
-		"project_urls",
 		"repo_root",
-		"long_description",
 		"install_requires",
 		"extras_require",
-		"classifiers",
-		"keywords",
+		"project_urls",
+
 		"import_name",
 		]
 
@@ -44,59 +40,30 @@ __copyright__ = """
 """
 
 __version__ = "0.1.1"
-
 modname = "flake8_strftime"
 pypi_name = "flake8_strftime"
 import_name = "flake8_strftime"
-py_modules = []
-entry_points = {
-		"console_scripts": [],
-		}
-
 __license__ = "MIT License"
-
 short_desc = "A flake8 plugin which checks for use of platform specific strftime codes."
-
 __author__ = author = "Dominic Davis-Foster"
 author_email = "dominic@davis-foster.co.uk"
 github_username = "domdfcoding"
-web = github_url = f"https://github.com/domdfcoding/flake8_strftime"
-project_urls = {
-		"Documentation": f"https://flake8_strftime.readthedocs.io",
-		"Issue Tracker": f"{github_url}/issues",
-		"Source Code": github_url,
-		}
-
+web = github_url = "https://github.com/domdfcoding/flake8_strftime"
 repo_root = pathlib.Path(__file__).parent
+install_requires = (repo_root / "requirements.txt").read_text(encoding="utf-8").split('\n')
+extras_require = {'all': []}
 
-# Get info from files; set: long_description
-long_description = (repo_root / "README.rst").read_text(encoding="utf-8").replace("0.1.1", __version__) + '\n'
+
+
 conda_description = """A flake8 plugin which checks for use of platform specific strftime codes.
 
 
 Before installing please ensure you have added the following channels: domdfcoding, conda-forge"""
 __all__.append("conda_description")
 
-install_requires = (repo_root / "requirements.txt").read_text(encoding="utf-8").split('\n')
-extras_require = {'all': []}
 
-classifiers = [
-		'Development Status :: 4 - Beta',
-		'Intended Audience :: Developers',
-		'License :: OSI Approved :: MIT License',
-		'Operating System :: OS Independent',
-		'Programming Language :: Python',
-		'Programming Language :: Python :: 3 :: Only',
-		'Programming Language :: Python :: 3.6',
-		'Programming Language :: Python :: 3.7',
-		'Programming Language :: Python :: 3.8',
-		'Programming Language :: Python :: 3.9',
-		'Programming Language :: Python :: Implementation :: CPython',
-		'Programming Language :: Python :: Implementation :: PyPy',
-		'Topic :: Software Development :: Libraries :: Python Modules',
-		'Topic :: Utilities',
-		'Typing :: Typed',
-
-		]
-
-keywords = ""
+project_urls = {
+		"Documentation": "https://flake8_strftime.readthedocs.io",
+		"Issue Tracker": f"{github_url}/issues",
+		"Source Code": github_url,
+		}
