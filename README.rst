@@ -149,3 +149,19 @@ Code           Description
 STRFTIME001    Linux-specific strftime code used
 STRFTIME002    Windows-specific strftime code used
 ============== ====================================
+
+
+Use as a pre-commit hook
+--------------------------
+
+See `pre-commit <https://github.com/pre-commit/pre-commit>`_ for instructions
+
+Sample `.pre-commit-config.yaml`:
+
+```yaml
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.1
+    hooks:
+    -   id: flake8
+        additional_dependencies: [flake8-strftime==0.1.1]
+```
