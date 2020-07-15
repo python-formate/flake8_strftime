@@ -38,4 +38,4 @@ classifiers:
   - "Topic :: Utilities"
 
 exclude_files:
-  - setup
+  - setup_cfg
