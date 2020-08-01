@@ -44,9 +44,9 @@ modname = "flake8_strftime"
 pypi_name = "flake8_strftime"
 import_name = "flake8_strftime"
 __license__ = "MIT License"
-short_desc = "A flake8 plugin which checks for use of platform specific strftime codes."
-__author__ = author = "Dominic Davis-Foster"
-author_email = "dominic@davis-foster.co.uk"
+short_desc = 'A flake8 plugin which checks for use of platform specific strftime codes.'
+__author__ = author = 'Dominic Davis-Foster'
+author_email = 'dominic@davis-foster.co.uk'
 github_username = "domdfcoding"
 web = github_url = "https://github.com/domdfcoding/flake8_strftime"
 repo_root = pathlib.Path(__file__).parent
