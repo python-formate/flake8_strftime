@@ -35,6 +35,8 @@ import re
 import sys
 from typing import Any, Dict, Generator, List, Tuple, Type, Union
 
+__all__ = ["Visitor", "Plugin", "STRFTIME001", "STRFTIME002"]
+
 __author__ = "Dominic Davis-Foster"
 __copyright__ = "2020 Dominic Davis-Foster"
 __license__ = "MIT"
@@ -55,6 +57,7 @@ class Visitor(ast.NodeVisitor):
 
 		def visit_Str(self, node: ast.Str):
 			"""
+			Visit an AST Str node.
 
 			:param node: The node being visited
 			"""
@@ -66,6 +69,7 @@ class Visitor(ast.NodeVisitor):
 
 		def visit_Constant(self, node: ast.Constant):
 			"""
+			Visit an AST Constant node.
 
 			:param node: The node being visited
 			"""
@@ -75,6 +79,7 @@ class Visitor(ast.NodeVisitor):
 
 	def _check_linux(self, node: Union[ast.Str, ast.Constant]):
 		"""
+		Perform the check for Linux-specific codes.
 
 		:param node: The node being visited
 		"""
@@ -88,6 +93,7 @@ class Visitor(ast.NodeVisitor):
 
 	def _check_windows(self, node: Union[ast.Str, ast.Constant]):
 		"""
+		Perform the check for Windows-specific codes.
 
 		:param node: The node being visited
 		"""
@@ -101,6 +107,12 @@ class Visitor(ast.NodeVisitor):
 
 
 class Plugin:
+	"""
+	The flake8 plugin.
+
+	:param tree:
+	"""
+
 	name: str = __name__
 	version: str = __version__
 
@@ -108,6 +120,10 @@ class Plugin:
 		self._tree = tree
 
 	def run(self) -> Generator[Tuple[int, int, str, Type[Any]], None, None]:
+		"""
+		Run the plugin.
+		"""
+
 		visitor = Visitor()
 		visitor.visit(self._tree)
 
