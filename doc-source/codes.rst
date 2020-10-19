@@ -2,9 +2,7 @@
 flake8 codes
 =================
 
-============== ====================================
-Code           Description
-============== ====================================
-STRFTIME001    Linux-specific strftime code used
-STRFTIME002    Windows-specific strftime code used
-============== ====================================
+.. flake8-codes:: flake8_strftime
+
+	STRFTIME001
+	STRFTIME002
