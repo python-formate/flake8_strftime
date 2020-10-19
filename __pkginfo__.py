@@ -39,7 +39,7 @@ __copyright__ = """
 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 """
 
-__version__ = "0.1.1"
+__version__ = "0.2.0"
 modname = "flake8_strftime"
 pypi_name = "flake8_strftime"
 import_name = "flake8_strftime"

@@ -93,7 +93,7 @@ flake8_strftime
 	:alt: GitHub top language
 
 .. |commits-since| github-shield::
-	:commits-since: v0.1.1
+	:commits-since: v0.2.0
 	:alt: GitHub commits since tagged version
 
 .. |commits-latest| github-shield::
@@ -129,7 +129,7 @@ See `pre-commit <https://github.com/pre-commit/pre-commit>`_ for instructions
 
 Sample ``.pre-commit-config.yaml``:
 
-.. pre-commit:flake8:: 0.1.1
+.. pre-commit:flake8:: 0.2.0
 
 
 .. toctree::

@@ -40,7 +40,7 @@ __all__ = ["Visitor", "Plugin", "STRFTIME001", "STRFTIME002"]
 __author__ = "Dominic Davis-Foster"
 __copyright__ = "2020 Dominic Davis-Foster"
 __license__ = "MIT"
-__version__ = "0.1.1"
+__version__ = "0.2.0"
 __email__ = "dominic@davis-foster.co.uk"
 
 STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."  # noqa: E501
