@@ -37,9 +37,6 @@ classifiers:
   - 'Topic :: Software Development :: Libraries :: Python Modules'
   - "Topic :: Utilities"
 
-exclude_files:
-  - setup_cfg
-
 
 extra_sphinx_extensions:
   - sphinx_toolbox.pre_commit
