@@ -43,7 +43,6 @@ source:
   url: "https://pypi.io/packages/source/f/flake8_strftime/flake8_strftime-{__version__}.tar.gz"
 
 build:
-
   noarch: python
   script: "{{{{ PYTHON }}}} -m pip install . -vv"
 
