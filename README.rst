@@ -36,17 +36,17 @@ flake8_strftime
 	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
 
-.. |travis| image:: https://img.shields.io/travis/com/domdfcoding/flake8_strftime/master?logo=travis
-	:target: https://travis-ci.com/domdfcoding/flake8_strftime
-	:alt: Travis Build Status
+.. |travis| image:: https://github.com/domdfcoding/flake8_strftime/workflows/Linux%20Tests/badge.svg
+	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%Linux+Tests%22
+	:alt: Linux Test Status
 
 .. |actions_windows| image:: https://github.com/domdfcoding/flake8_strftime/workflows/Windows%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%22Windows+Tests%22
-	:alt: Windows Tests Status
+	:alt: Windows Test Status
 
 .. |actions_macos| image:: https://github.com/domdfcoding/flake8_strftime/workflows/macOS%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%22macOS+Tests%22
-	:alt: macOS Tests Status
+	:alt: macOS Test Status
 
 .. |requires| image:: https://requires.io/github/domdfcoding/flake8_strftime/requirements.svg?branch=master
 	:target: https://requires.io/github/domdfcoding/flake8_strftime/requirements/?branch=master
