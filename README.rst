@@ -37,7 +37,7 @@ flake8_strftime
 	:alt: Docs Check Status
 
 .. |travis| image:: https://github.com/domdfcoding/flake8_strftime/workflows/Linux%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%Linux+Tests%22
+	:target: https://github.com/domdfcoding/flake8_strftime/actions?query=workflow%3A%22Linux+Tests%22
 	:alt: Linux Test Status
 
 .. |actions_windows| image:: https://github.com/domdfcoding/flake8_strftime/workflows/Windows%20Tests/badge.svg
