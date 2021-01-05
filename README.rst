@@ -109,7 +109,7 @@ flake8_strftime
 	:target: https://github.com/domdfcoding/flake8_strftime/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2020
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake8_strftime
@@ -170,7 +170,7 @@ Use as a pre-commit hook
 
 See `pre-commit <https://github.com/pre-commit/pre-commit>`_ for instructions
 
-Sample `.pre-commit-config.yaml`:
+Sample ``.pre-commit-config.yaml``:
 
 .. code-block:: yaml
 
