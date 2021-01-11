@@ -157,13 +157,7 @@ Sample ``.pre-commit-config.yaml``:
 	:caption: Documentation
 
 	codes
-	API Reference<docs>
-
-
-.. toctree::
-	:maxdepth: 3
-	:caption: Contributing
-
+	api
 	contributing
 	Source
 

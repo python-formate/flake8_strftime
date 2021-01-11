@@ -22,7 +22,6 @@ python_versions:
  - "3.10-dev"
  - "pypy3"
 
-# travis secure password for PyPI
 
 classifiers:
  - 'Development Status :: 4 - Beta'
@@ -37,3 +36,6 @@ extra_sphinx_extensions:
 entry_points:
   flake8.extension:
    - STRFTIME=flake8_strftime:Plugin
+
+sphinx_html_theme: furo
+standalone_contrib_guide: true
