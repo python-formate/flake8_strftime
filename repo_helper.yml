@@ -39,3 +39,5 @@ entry_points:
 
 sphinx_html_theme: furo
 standalone_contrib_guide: true
+
+min_coverage: 90
