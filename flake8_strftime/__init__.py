@@ -53,7 +53,7 @@ class Visitor(ast.NodeVisitor):  # noqa: D101
 		self.errors: List[Tuple[int, int, str]] = []
 		self._from_imports: Dict[str, str] = {}
 
-	if sys.version_info < (3, 8):  # pragma: no cover (<PY38)
+	if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
 
 		def visit_Str(self, node: ast.Str):
 			"""
@@ -65,7 +65,7 @@ class Visitor(ast.NodeVisitor):  # noqa: D101
 			self._check_linux(node)
 			self._check_windows(node)
 
-	else:  # pragma: no cover (PY38+)
+	else:  # pragma: no cover (<PY38)
 
 		def visit_Constant(self, node: ast.Constant):
 			"""
@@ -73,6 +73,9 @@ class Visitor(ast.NodeVisitor):  # noqa: D101
 
 			:param node: The node being visited
 			"""
+
+			if not isinstance(node.s, (str, bytes)):
+				return
 
 			self._check_linux(node)
 			self._check_windows(node)
