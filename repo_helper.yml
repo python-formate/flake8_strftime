@@ -1,3 +1,4 @@
+# Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper)
 ---
 modname: flake8_strftime
 repo_name: flake8_strftime
@@ -17,11 +18,11 @@ conda_channels:
 python_versions:
  - '3.6'
  - '3.7'
- - "3.8"
+ - '3.8'
  - '3.9'
- - "3.10-dev"
- - "pypy3"
-
+ - 3.10-dev
+ - pypy3
+ - rustpython
 
 classifiers:
  - 'Development Status :: 4 - Beta'
