@@ -2,7 +2,7 @@
 #
 #  __init__.py
 """
-A flake8 plugin which checks for use of platform specific strftime codes.
+A Flake8 plugin which checks for use of platform specific strftime codes.
 """
 #
 #  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -33,12 +33,15 @@ A flake8 plugin which checks for use of platform specific strftime codes.
 import ast
 import re
 import sys
-from typing import Any, Dict, Generator, List, Tuple, Type, Union
+from typing import Dict, Union
+
+# 3rd party
+import flake8_helper
 
 __all__ = ["Visitor", "Plugin", "STRFTIME001", "STRFTIME002"]
 
 __author__ = "Dominic Davis-Foster"
-__copyright__ = "2020 Dominic Davis-Foster"
+__copyright__ = "2020-2021 Dominic Davis-Foster"
 __license__ = "MIT"
 __version__ = "0.2.1"
 __email__ = "dominic@davis-foster.co.uk"
@@ -47,10 +50,10 @@ STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."  # noqa: E501
 STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."  # noqa: E501
 
 
-class Visitor(ast.NodeVisitor):  # noqa: D101
+class Visitor(flake8_helper.Visitor):  # noqa: D101
 
 	def __init__(self) -> None:
-		self.errors: List[Tuple[int, int, str]] = []
+		super().__init__()
 		self._from_imports: Dict[str, str] = {}
 
 	if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
@@ -109,26 +112,13 @@ class Visitor(ast.NodeVisitor):  # noqa: D101
 					))
 
 
-class Plugin:
+class Plugin(flake8_helper.Plugin[Visitor]):
 	"""
-	The flake8 plugin.
+	A Flake8 plugin which checks for use of platform specific strftime codes.
 
-	:param tree:
+	:param tree: The abstract syntax tree (AST) to check.
 	"""
 
 	name: str = __name__
-	version: str = __version__
-
-	def __init__(self, tree: ast.AST):
-		self._tree = tree
-
-	def run(self) -> Generator[Tuple[int, int, str, Type[Any]], None, None]:
-		"""
-		Run the plugin.
-		"""
-
-		visitor = Visitor()
-		visitor.visit(self._tree)
-
-		for line, col, msg in visitor.errors:
-			yield line, col, msg, type(self)
+	version: str = __version__  #: The plugin version
+	visitor_class = Visitor

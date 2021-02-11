@@ -2,7 +2,7 @@
 ---
 modname: flake8_strftime
 repo_name: flake8_strftime
-copyright_years: "2020"
+copyright_years: "2020-2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 version: "0.2.1"
