@@ -26,7 +26,7 @@ author = "Dominic Davis-Foster"
 project = "flake8_strftime"
 slug = re.sub(r'\W+', '-', project.lower())
 release = version = __version__
-copyright = "2020 Dominic Davis-Foster"  # pylint: disable=redefined-builtin
+copyright = "2020-2021 Dominic Davis-Foster"  # pylint: disable=redefined-builtin
 language = "en"
 package_root = "flake8_strftime"
 
