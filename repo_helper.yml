@@ -39,4 +39,7 @@ entry_points:
 sphinx_html_theme: furo
 standalone_contrib_guide: true
 
-min_coverage: 90
+min_coverage: 100
+
+tox_unmanaged:
+ - testenv:lint
