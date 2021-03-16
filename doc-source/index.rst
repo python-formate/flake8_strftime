@@ -139,16 +139,6 @@ Installation
 .. end installation
 
 
-Use as a pre-commit hook
---------------------------
-
-See `pre-commit <https://github.com/pre-commit/pre-commit>`_ for instructions
-
-Sample ``.pre-commit-config.yaml``:
-
-.. pre-commit:flake8:: 0.3.0
-
-
 .. toctree::
 	:hidden:
 
@@ -158,7 +148,7 @@ Sample ``.pre-commit-config.yaml``:
 	:maxdepth: 3
 	:caption: Documentation
 
-	codes
+	usage
 	api
 	contributing
 	Source
