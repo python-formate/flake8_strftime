@@ -46,8 +46,8 @@ __license__ = "MIT"
 __version__ = "0.2.1"
 __email__ = "dominic@davis-foster.co.uk"
 
-STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."  # noqa: E501
-STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."  # noqa: E501
+STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."
+STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
 
 
 class Visitor(flake8_helper.Visitor):  # noqa: D101
