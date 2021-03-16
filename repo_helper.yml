@@ -44,3 +44,10 @@ min_coverage: 100
 
 tox_unmanaged:
  - testenv:lint
+
+keywords:
+ - flake8
+ - date
+ - time
+ - datetime
+ - strftime

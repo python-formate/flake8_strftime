@@ -7,7 +7,7 @@ name = "flake8_strftime"
 version = "0.2.1"
 description = "A flake8 plugin which checks for use of platform specific strftime codes."
 readme = "README.rst"
-keywords = []
+keywords = [ "flake8", "date", "time", "datetime", "strftime",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
