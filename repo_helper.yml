@@ -10,9 +10,10 @@ username: "domdfcoding"
 license: 'MIT'
 short_desc: "A flake8 plugin which checks for use of platform specific strftime codes."
 
+use_whey: true
+min_coverage: 100
 sphinx_html_theme: furo
 standalone_contrib_guide: true
-min_coverage: 100
 
 conda_channels:
  - conda-forge
