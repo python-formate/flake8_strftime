@@ -49,6 +49,9 @@ __email__ = "dominic@davis-foster.co.uk"
 STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."
 STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
 
+_linux_re = re.compile(r"%-[dmHIMSj]")
+_win_re = re.compile(r"%#[dmHIMSj]")
+
 
 class Visitor(flake8_helper.Visitor):  # noqa: D101
 
@@ -90,7 +93,7 @@ class Visitor(flake8_helper.Visitor):  # noqa: D101
 		:param node: The node being visited
 		"""
 
-		for match in re.finditer(r"%-[dmHIMSj]", node.s):
+		for match in _linux_re.finditer(node.s):
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
@@ -104,7 +107,7 @@ class Visitor(flake8_helper.Visitor):  # noqa: D101
 		:param node: The node being visited
 		"""
 
-		for match in re.finditer(r"%#[dmHIMSj]", node.s):
+		for match in _win_re.finditer(node.s):
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
