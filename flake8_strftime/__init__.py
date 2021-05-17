@@ -3,6 +3,8 @@
 #  __init__.py
 """
 A Flake8 plugin which checks for use of platform specific strftime codes.
+
+.. autosummary-widths:: 1/3 2/3
 """
 #
 #  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -53,7 +55,13 @@ _linux_re = re.compile(r"%-[dmHIMSj]")
 _win_re = re.compile(r"%#[dmHIMSj]")
 
 
-class Visitor(flake8_helper.Visitor):  # noqa: D101
+class Visitor(flake8_helper.Visitor):
+	"""
+	AST node visitor for identifying platform specific strftime codes.
+
+	.. autoclasssumm::
+		:autosummary-sections: ;;
+	"""
 
 	def __init__(self) -> None:
 		super().__init__()
