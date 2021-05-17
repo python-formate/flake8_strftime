@@ -4,7 +4,7 @@ flake8_strftime
 
 .. start short_desc
 
-**A flake8 plugin which checks for use of platform specific strftime codes.**
+.. documentation-summary::
 
 .. end short_desc
 
@@ -27,7 +27,7 @@ flake8_strftime
 		* - Activity
 		  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 		* - QA
-		  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+		  - |codefactor| |actions_flake8| |actions_mypy|
 		* - Other
 		  - |license| |language| |requires|
 
@@ -119,9 +119,6 @@ flake8_strftime
 		:project: flake8_strftime
 		:downloads: month
 		:alt: PyPI - Downloads
-
-	.. |pre_commit_ci| pre-commit-ci-shield::
-		:alt: pre-commit.ci status
 
 .. end shields
 
