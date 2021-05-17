@@ -5,9 +5,9 @@
 A Flake8 plugin which checks for use of platform specific strftime codes.
 
 .. autosummary-widths:: 1/3 2/3
-"""
+"""  # noqa: RST303
 #
-#  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
+#  Copyright (c) 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #
 #  Based on flake8_2020
 #  Copyright (c) 2019 Anthony Sottile
@@ -61,7 +61,7 @@ class Visitor(flake8_helper.Visitor):
 
 	.. autoclasssumm::
 		:autosummary-sections: ;;
-	"""
+	"""  # noqa: RST303
 
 	def __init__(self) -> None:
 		super().__init__()
