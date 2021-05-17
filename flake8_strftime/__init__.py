@@ -77,7 +77,7 @@ class Visitor(flake8_helper.Visitor):  # noqa: D101
 			:param node: The node being visited
 			"""
 
-			if not isinstance(node.s, (str, bytes)):
+			if not isinstance(node.s, str):
 				return
 
 			self._check_linux(node)
