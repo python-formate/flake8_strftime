@@ -153,12 +153,18 @@ Installation
 	contributing
 	Source
 
+.. sidebar-links::
+	:caption: Links
+	:github:
+	:pypi: flake8_strftime
+
+
 .. start links
 
 .. only:: html
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/domdfcoding/flake8_strftime>`__
+	:github:repo:`Browse the GitHub Repository <domdfcoding/flake8_strftime>`
 
 .. end links
