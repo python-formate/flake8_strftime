@@ -105,7 +105,7 @@ flake8_strftime
 		:alt: GitHub top language
 
 	.. |commits-since| github-shield::
-		:commits-since: v0.3.1
+		:commits-since: v0.3.2
 		:alt: GitHub commits since tagged version
 
 	.. |commits-latest| github-shield::

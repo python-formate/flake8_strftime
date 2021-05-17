@@ -5,7 +5,7 @@ repo_name: flake8_strftime
 copyright_years: "2020-2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
-version: "0.3.1"
+version: "0.3.2"
 username: "domdfcoding"
 license: 'MIT'
 short_desc: "A flake8 plugin which checks for use of platform specific strftime codes."
