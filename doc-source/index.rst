@@ -151,13 +151,14 @@ Contents
 
 	usage
 	api
-	contributing
 	Source
 
 .. sidebar-links::
 	:caption: Links
 	:github:
 	:pypi: flake8_strftime
+
+	Contributing Guide<https://contributing-to-formate.readthedocs.io>
 
 
 .. start links
@@ -166,6 +167,6 @@ Contents
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	:github:repo:`Browse the GitHub Repository <domdfcoding/flake8_strftime>`
+	:github:repo:`Browse the GitHub Repository <python-formate/flake8_strftime>`
 
 .. end links
