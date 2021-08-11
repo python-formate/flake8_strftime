@@ -6,14 +6,15 @@ copyright_years: "2020-2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 version: "0.3.2"
-username: "domdfcoding"
+username: "python-formate"
+assignee: "domdfcoding"
+primary_conda_channel: "domdfcoding"
 license: 'MIT'
 short_desc: "A flake8 plugin which checks for use of platform specific strftime codes."
 
 use_whey: true
 min_coverage: 100
 sphinx_html_theme: furo
-standalone_contrib_guide: true
 preserve_custom_theme: true
 
 conda_channels:
@@ -38,12 +39,17 @@ classifiers:
 extra_sphinx_extensions:
  - sphinx_toolbox.pre_commit
  - sphinx_toolbox.flake8
- - html_section
- - autosummary_widths
+ - sphinx_toolbox_experimental.html_section
+ - sphinx_toolbox_experimental.autosummary_widths
+ - sphinx_toolbox_experimental.needspace
 
 entry_points:
   flake8.extension:
    - STRFTIME=flake8_strftime:Plugin
+
+sphinx_conf_epilogue:
+ - nitpicky = True
+ - autosummary_widths_builders = ["latex"]
 
 tox_unmanaged:
  - testenv:lint
@@ -54,3 +60,6 @@ keywords:
  - time
  - datetime
  - strftime
+
+exclude_files:
+ - contributing

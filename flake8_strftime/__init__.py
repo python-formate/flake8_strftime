@@ -58,9 +58,6 @@ _win_re = re.compile(r"%#[dmHIMSj]")
 class Visitor(flake8_helper.Visitor):
 	"""
 	AST node visitor for identifying platform specific strftime codes.
-
-	.. autoclasssumm::
-		:autosummary-sections: ;;
 	"""  # noqa: RST303
 
 	def __init__(self) -> None:

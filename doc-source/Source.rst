@@ -3,13 +3,13 @@ Downloading source code
 =========================
 
 The ``flake8_strftime`` source code is available on GitHub,
-and can be accessed from the following URL: https://github.com/domdfcoding/flake8_strftime
+and can be accessed from the following URL: https://github.com/python-formate/flake8_strftime
 
 If you have ``git`` installed, you can clone the repository with the following command:
 
 .. prompt:: bash
 
-	git clone https://github.com/domdfcoding/flake8_strftime
+	git clone https://github.com/python-formate/flake8_strftime
 
 .. parsed-literal::
 

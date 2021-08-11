@@ -5,6 +5,7 @@ flake8_strftime
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -135,10 +136,12 @@ Installation
 
 .. end installation
 
+
 Contents
 ---------
 
 .. html-section::
+
 
 .. toctree::
 	:hidden:
@@ -150,13 +153,15 @@ Contents
 
 	usage
 	api
-	contributing
 	Source
+	license
 
 .. sidebar-links::
 	:caption: Links
 	:github:
 	:pypi: flake8_strftime
+
+	Contributing Guide<https://contributing-to-formate.readthedocs.io>
 
 
 .. start links
@@ -165,6 +170,6 @@ Contents
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	:github:repo:`Browse the GitHub Repository <domdfcoding/flake8_strftime>`
+	:github:repo:`Browse the GitHub Repository <python-formate/flake8_strftime>`
 
 .. end links
