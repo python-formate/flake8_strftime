@@ -16,6 +16,7 @@ use_whey: true
 min_coverage: 100
 sphinx_html_theme: furo
 preserve_custom_theme: true
+docs_fail_on_warning: true
 
 conda_channels:
  - conda-forge
