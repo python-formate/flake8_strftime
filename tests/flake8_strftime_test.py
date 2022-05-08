@@ -1,5 +1,6 @@
 # stdlib
 import ast
+from typing import Set
 
 # 3rd party
 import pytest
@@ -8,7 +9,7 @@ import pytest
 from flake8_strftime import Plugin
 
 
-def results(s):
+def results(s) -> Set[str]:
 	return {"{}:{}: {}".format(*r) for r in Plugin(ast.parse(s)).run()}
 
 

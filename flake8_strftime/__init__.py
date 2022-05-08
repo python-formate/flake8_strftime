@@ -66,7 +66,7 @@ class Visitor(flake8_helper.Visitor):
 
 	if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
 
-		def visit_Str(self, node: ast.Str):
+		def visit_Str(self, node: ast.Str) -> None:
 			"""
 			Visit an AST Str node.
 
@@ -78,7 +78,7 @@ class Visitor(flake8_helper.Visitor):
 
 	else:  # pragma: no cover (<PY38)
 
-		def visit_Constant(self, node: ast.Constant):
+		def visit_Constant(self, node: ast.Constant) -> None:
 			"""
 			Visit an AST Constant node.
 
@@ -91,7 +91,7 @@ class Visitor(flake8_helper.Visitor):
 			self._check_linux(node)
 			self._check_windows(node)
 
-	def _check_linux(self, node: Union[ast.Str, ast.Constant]):
+	def _check_linux(self, node: Union[ast.Str, ast.Constant]) -> None:
 		"""
 		Perform the check for Linux-specific codes.
 
@@ -105,7 +105,7 @@ class Visitor(flake8_helper.Visitor):
 					STRFTIME001,
 					))
 
-	def _check_windows(self, node: Union[ast.Str, ast.Constant]):
+	def _check_windows(self, node: Union[ast.Str, ast.Constant]) -> None:
 		"""
 		Perform the check for Windows-specific codes.
 
