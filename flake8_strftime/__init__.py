@@ -40,7 +40,7 @@ from typing import Dict, Union
 # 3rd party
 import flake8_helper
 
-__all__ = ["Visitor", "Plugin", "STRFTIME001", "STRFTIME002"]
+__all__ = ("Visitor", "Plugin", "STRFTIME001", "STRFTIME002")
 
 __author__ = "Dominic Davis-Foster"
 __copyright__ = "2020-2021 Dominic Davis-Foster"
@@ -51,14 +51,14 @@ __email__ = "dominic@davis-foster.co.uk"
 STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."
 STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
 
-_linux_re = re.compile(r"%-[dmHIMSj]")
-_win_re = re.compile(r"%#[dmHIMSj]")
-
 
 class Visitor(flake8_helper.Visitor):
 	"""
 	AST node visitor for identifying platform specific strftime codes.
 	"""  # noqa: RST303
+
+	_linux_re = re.compile(r"%-[dmHIMSj]")
+	_win_re = re.compile(r"%#[dmHIMSj]")
 
 	def __init__(self) -> None:
 		super().__init__()
@@ -98,11 +98,11 @@ class Visitor(flake8_helper.Visitor):
 		:param node: The node being visited
 		"""
 
-		for match in _linux_re.finditer(node.s):
+		for match in self._linux_re.finditer(node.s):  # pylint: disable=use-list-copy
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
-					STRFTIME001,
+					STRFTIME001,  # pylint: disable=loop-global-usage
 					))
 
 	def _check_windows(self, node: Union[ast.Str, ast.Constant]) -> None:
@@ -112,11 +112,11 @@ class Visitor(flake8_helper.Visitor):
 		:param node: The node being visited
 		"""
 
-		for match in _win_re.finditer(node.s):
+		for match in self._win_re.finditer(node.s):  # pylint: disable=use-list-copy
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
-					STRFTIME002,
+					STRFTIME002,  # pylint: disable=loop-global-usage
 					))
 
 
