@@ -60,8 +60,8 @@ flake8_strftime
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/python-formate/flake8_strftime/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/python-formate/flake8_strftime/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/python-formate/flake8_strftime/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/python-formate/flake8_strftime/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
