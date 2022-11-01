@@ -27,10 +27,12 @@ python_versions:
  - '3.8'
  - '3.9'
  - "3.10"
- - 3.11-dev
+ - "3.11"
+ - 3.12-dev
  - pypy36
  - pypy37
  - pypy38
+ - pypy39
 
 classifiers:
  - 'Development Status :: 4 - Beta'
@@ -52,9 +54,6 @@ sphinx_conf_epilogue:
  - nitpicky = True
  - needspace_amount = r"5\baselineskip"
  - 'favicons = [{"rel": "icon", "href": "https://python-formate.github.io/assets/formate.ico",  "sizes": "48x48", "type": "image/vnd.microsoft.icon"}]'
-
-tox_unmanaged:
- - testenv:lint
 
 keywords:
  - flake8
