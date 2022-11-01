@@ -9,7 +9,7 @@ import pytest
 from flake8_strftime import Plugin
 
 
-def results(s) -> Set[str]:
+def results(s: str) -> Set[str]:
 	return {"{}:{}: {}".format(*r) for r in Plugin(ast.parse(s)).run()}
 
 

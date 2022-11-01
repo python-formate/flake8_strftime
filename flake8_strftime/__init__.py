@@ -5,7 +5,7 @@
 A Flake8 plugin which checks for use of platform specific strftime codes.
 
 .. autosummary-widths:: 1/3 2/3
-"""  # noqa: RST303
+"""
 #
 #  Copyright (c) 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #
@@ -55,7 +55,7 @@ STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
 class Visitor(flake8_helper.Visitor):
 	"""
 	AST node visitor for identifying platform specific strftime codes.
-	"""  # noqa: RST303
+	"""
 
 	_linux_re = re.compile(r"%-[dmHIMSj]")
 	_win_re = re.compile(r"%#[dmHIMSj]")
