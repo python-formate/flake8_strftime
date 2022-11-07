@@ -153,11 +153,11 @@ To install with ``conda``:
 flake8 codes
 --------------
 
-============== ====================================
-Code           Description
-============== ====================================
-STRFTIME001    Linux-specific strftime code used
-STRFTIME002    Windows-specific strftime code used
+========= ====================================
+Code      Description
+========= ====================================
+SFT001    Linux-specific strftime code used
+SFT002    Windows-specific strftime code used
 ============== ====================================
 
 

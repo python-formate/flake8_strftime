@@ -40,7 +40,7 @@ from typing import Dict, Union
 # 3rd party
 import flake8_helper
 
-__all__ = ("Visitor", "Plugin", "STRFTIME001", "STRFTIME002")
+__all__ = ("Visitor", "Plugin", "SFT001", "SFT002")
 
 __author__ = "Dominic Davis-Foster"
 __copyright__ = "2020-2021 Dominic Davis-Foster"
@@ -48,8 +48,8 @@ __license__ = "MIT"
 __version__ = "0.3.1"
 __email__ = "dominic@davis-foster.co.uk"
 
-STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."
-STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
+SFT001 = "SFT001 Linux-specific strftime code used."
+SFT002 = "SFT002 Windows-specific strftime code used."
 
 
 class Visitor(flake8_helper.Visitor):
@@ -102,7 +102,7 @@ class Visitor(flake8_helper.Visitor):
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
-					STRFTIME001,  # pylint: disable=loop-global-usage
+					SFT001,  # pylint: disable=loop-global-usage
 					))
 
 	def _check_windows(self, node: Union[ast.Str, ast.Constant]) -> None:
@@ -116,7 +116,7 @@ class Visitor(flake8_helper.Visitor):
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
-					STRFTIME002,  # pylint: disable=loop-global-usage
+					SFT002,  # pylint: disable=loop-global-usage
 					))
 
 
