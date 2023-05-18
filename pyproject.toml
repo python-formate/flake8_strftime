@@ -22,7 +22,7 @@ file = "LICENSE"
 Homepage = "https://github.com/python-formate/flake8_strftime"
 "Issue Tracker" = "https://github.com/python-formate/flake8_strftime/issues"
 "Source Code" = "https://github.com/python-formate/flake8_strftime"
-Documentation = "https://flake8_strftime.readthedocs.io/en/latest"
+Documentation = "https://flake8-strftime.readthedocs.io/en/latest"
 
 [tool.whey]
 base-classifiers = [

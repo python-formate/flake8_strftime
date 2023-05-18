@@ -33,7 +33,7 @@ flake8_strftime
 		  - |license| |language| |requires|
 
 	.. |docs| rtfd-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:alt: Documentation Build Status
 
 	.. |docs_check| actions-shield::
@@ -114,7 +114,7 @@ flake8_strftime
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2022
+	.. |maintained| maintained-shield:: 2023
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::

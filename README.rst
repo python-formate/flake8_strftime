@@ -30,8 +30,8 @@ flake8_strftime
 	* - Other
 	  - |license| |language| |requires|
 
-.. |docs| image:: https://img.shields.io/readthedocs/flake8_strftime/latest?logo=read-the-docs
-	:target: https://flake8_strftime.readthedocs.io/en/latest
+.. |docs| image:: https://img.shields.io/readthedocs/flake8-strftime/latest?logo=read-the-docs
+	:target: https://flake8-strftime.readthedocs.io/en/latest
 	:alt: Documentation Build Status
 
 .. |docs_check| image:: https://github.com/python-formate/flake8_strftime/workflows/Docs%20Check/badge.svg
@@ -109,7 +109,7 @@ flake8_strftime
 	:target: https://github.com/python-formate/flake8_strftime/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2023
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake8_strftime
