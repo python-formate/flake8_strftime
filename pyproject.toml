@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "flake8_strftime"
-version = "0.3.3"
+version = "0.3.4"
 description = "A flake8 plugin which checks for use of platform specific strftime codes."
 readme = "README.rst"
 keywords = [ "date", "datetime", "flake8", "strftime", "time",]
