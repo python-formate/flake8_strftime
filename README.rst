@@ -101,7 +101,7 @@ flake8_strftime
 .. |language| image:: https://img.shields.io/github/languages/top/python-formate/flake8_strftime
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/python-formate/flake8_strftime/v0.3.2
+.. |commits-since| image:: https://img.shields.io/github/commits-since/python-formate/flake8_strftime/v0.3.3
 	:target: https://github.com/python-formate/flake8_strftime/pulse
 	:alt: GitHub commits since tagged version
 
@@ -174,4 +174,4 @@ Sample ``.pre-commit-config.yaml``:
 	   rev: 3.8.1
 	   hooks:
 	    - id: flake8
-	      additional_dependencies: [flake8-strftime==0.3.2]
+	      additional_dependencies: [flake8-strftime==0.3.3]
