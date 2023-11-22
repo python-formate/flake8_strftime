@@ -51,6 +51,11 @@ __email__ = "dominic@davis-foster.co.uk"
 STRFTIME001 = "STRFTIME001 Linux-specific strftime code used."
 STRFTIME002 = "STRFTIME002 Windows-specific strftime code used."
 
+if sys.version_info >= (3, 12):  # pragma: no cover (<py312)
+	StrOrConstant = ast.Constant
+else:  # pragma: no cover (py312+)
+	StrOrConstant = Union[ast.Str, ast.Constant]
+
 
 class Visitor(flake8_helper.Visitor):
 	"""
@@ -85,34 +90,48 @@ class Visitor(flake8_helper.Visitor):
 			:param node: The node being visited
 			"""
 
-			if not isinstance(node.s, str):
-				return
+			if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
+				if not isinstance(node.s, str):
+					return
+			else:  # pragma: no cover (<PY38)
+				if not isinstance(node.value, str):
+					return
 
 			self._check_linux(node)
 			self._check_windows(node)
 
-	def _check_linux(self, node: Union[ast.Str, ast.Constant]) -> None:
+	def _check_linux(self, node: StrOrConstant) -> None:
 		"""
 		Perform the check for Linux-specific codes.
 
 		:param node: The node being visited
 		"""
 
-		for match in self._linux_re.finditer(node.s):  # pylint: disable=use-list-copy
+		if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
+			node_value = node.s
+		else:  # pragma: no cover (<PY38)
+			node_value = node.value
+
+		for match in self._linux_re.finditer(node_value):  # pylint: disable=use-list-copy
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
 					STRFTIME001,  # pylint: disable=loop-global-usage
 					))
 
-	def _check_windows(self, node: Union[ast.Str, ast.Constant]) -> None:
+	def _check_windows(self, node: StrOrConstant) -> None:
 		"""
 		Perform the check for Windows-specific codes.
 
 		:param node: The node being visited
 		"""
 
-		for match in self._win_re.finditer(node.s):  # pylint: disable=use-list-copy
+		if sys.version_info < (3, 8):  # pragma: no cover (PY38+)
+			node_value = node.s
+		else:  # pragma: no cover (<PY38)
+			node_value = node.value
+
+		for match in self._win_re.finditer(node_value):  # pylint: disable=use-list-copy
 			self.errors.append((
 					node.lineno,
 					node.col_offset + match.span()[0],
