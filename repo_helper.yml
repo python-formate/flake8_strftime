@@ -49,7 +49,7 @@ extra_sphinx_extensions:
 
 entry_points:
   flake8.extension:
-   - STRFTIME=flake8_strftime:Plugin
+   - SFT=flake8_strftime:Plugin
 
 sphinx_conf_epilogue:
  - nitpicky = True
