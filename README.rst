@@ -70,20 +70,20 @@ flake8_strftime
 	:target: https://www.codefactor.io/repository/github/python-formate/flake8_strftime
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/flake8_strftime
-	:target: https://pypi.org/project/flake8_strftime/
+.. |pypi-version| image:: https://img.shields.io/pypi/v/flake8-strftime
+	:target: https://pypi.org/project/flake8-strftime/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/flake8_strftime?logo=python&logoColor=white
-	:target: https://pypi.org/project/flake8_strftime/
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/flake8-strftime?logo=python&logoColor=white
+	:target: https://pypi.org/project/flake8-strftime/
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/flake8_strftime
-	:target: https://pypi.org/project/flake8_strftime/
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/flake8-strftime
+	:target: https://pypi.org/project/flake8-strftime/
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/flake8_strftime
-	:target: https://pypi.org/project/flake8_strftime/
+.. |wheel| image:: https://img.shields.io/pypi/wheel/flake8-strftime
+	:target: https://pypi.org/project/flake8-strftime/
 	:alt: PyPI - Wheel
 
 .. |conda-version| image:: https://img.shields.io/conda/v/domdfcoding/flake8_strftime?logo=anaconda
@@ -112,8 +112,8 @@ flake8_strftime
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
-.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake8_strftime
-	:target: https://pypistats.org/packages/flake8_strftime
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake8-strftime
+	:target: https://pypistats.org/packages/flake8-strftime
 	:alt: PyPI - Downloads
 
 .. end shields
