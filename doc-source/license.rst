@@ -7,4 +7,4 @@ License
 .. license-info:: MIT
 
 .. license::
-	:py: flake8_strftime
+	:py: flake8-strftime

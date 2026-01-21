@@ -71,22 +71,22 @@ flake8_strftime
 		:alt: CodeFactor Grade
 
 	.. |pypi-version| pypi-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:version:
 		:alt: PyPI - Package Version
 
 	.. |supported-versions| pypi-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:py-versions:
 		:alt: PyPI - Supported Python Versions
 
 	.. |supported-implementations| pypi-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:implementations:
 		:alt: PyPI - Supported Implementations
 
 	.. |wheel| pypi-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:wheel:
 		:alt: PyPI - Wheel
 
@@ -118,7 +118,7 @@ flake8_strftime
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
-		:project: flake8_strftime
+		:project: flake8-strftime
 		:downloads: month
 		:alt: PyPI - Downloads
 
